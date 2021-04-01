@@ -1,0 +1,49 @@
+.container {
+  max-width: 1120px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auto-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1rem;
+}
+
+.auto-scroll.black a {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.auto-scroll.black a:hover, .auto-scroll.black a.selected {
+  background: var(--gray-800);
+}
+
+.auto-scroll a {
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  height: 0.875rem;
+  width: 0.875rem;
+  border-radius: 0.5rem;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+.auto-scroll a + a {
+  margin-top: 0.5rem;
+}
+
+.auto-scroll a:hover, .auto-scroll a.selected {
+  background: var(--gray-100);
+}
+/*# sourceMappingURL=common.css.map */
