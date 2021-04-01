@@ -212,6 +212,15 @@
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  #contact .content > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #contact .content > div .contact p + p {
   margin-top: 0.5rem;
 }
@@ -220,6 +229,12 @@
   margin-top: 2rem;
   height: 15rem;
   width: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .content > div .contact iframe {
+    width: 100%;
+  }
 }
 
 #contact .content > div form {
@@ -234,6 +249,17 @@
       -ms-flex: 1;
           flex: 1;
   margin-left: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .content > div form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
 }
 
 #contact .content > div form p {
