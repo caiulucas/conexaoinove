@@ -6,7 +6,7 @@
 .header-section::before {
   content: "";
   position: absolute;
-  background: var(--black) url("/images/homeBg.jpg") no-repeat fixed top;
+  background: var(--black) url("./images/homeBg.jpg") no-repeat fixed top;
   background-size: cover;
   top: 0;
   left: 0;

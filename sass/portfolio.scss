@@ -9,7 +9,7 @@
   &::before  {
     content: "";
     position: absolute;
-    background: var(--gray-100) url('/images/portfolioBg.jpg') no-repeat top fixed;
+    background: var(--gray-100) url('./images/portfolioBg.jpg') no-repeat top fixed;
     background-size: cover;
     filter: contrast(2) brightness(0.2);
     top: 0; left: 0;
