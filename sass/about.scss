@@ -10,7 +10,7 @@
   &::before  {
     content: "";
     position: absolute;
-    background: var(--blue-900) url("./images/aboutBg.jpg") no-repeat top fixed;
+    background: var(--blue-900) url("/images/aboutBg.jpg") no-repeat top fixed;
     background-size: cover;
     filter: brightness(0.5) contrast(2);
     top: 0; left: 0;
