@@ -5,7 +5,7 @@
   &::before  {
     content: "";
     position: absolute;
-    background: var(--blue-900) url("/images/servicesBg.jpg") no-repeat top center fixed;
+    background: var(--blue-900) url("../images/servicesBg.jpg") no-repeat top center fixed;
     background-size: cover;
     filter: contrast(0.1);
     top: 0; left: 0;
