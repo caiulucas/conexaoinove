@@ -1,0 +1,110 @@
+#contact {
+  background-color: var(--gray-800);
+  color: var(--gray-500);
+}
+
+#contact .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#contact .content h1 {
+  color: var(--gray-400);
+}
+
+#contact .content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .content > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#contact .content > div .contact p + p {
+  margin-top: 0.5rem;
+}
+
+#contact .content > div .contact iframe {
+  margin-top: 2rem;
+  height: 15rem;
+  width: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .content > div .contact iframe {
+    width: 100%;
+  }
+}
+
+#contact .content > div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .content > div form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+#contact .content > div form p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+#contact .content > div form label + input {
+  margin-bottom: 2rem;
+}
+
+#contact .content > div form input, #contact .content > div form textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--gray-700);
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  color: var(--gray-100);
+}
+
+#contact .content > div form textarea {
+  height: 6rem;
+  resize: vertical;
+}
+
+#contact .content > div form button {
+  width: 10rem;
+  height: 3.5rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--gray-50);
+  font-weight: bold;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+#contact .content > div form button:hover {
+  background-color: var(--gray-100);
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,38 @@
+
+#clients {
+  position: relative;
+
+  &::before  {
+    content: "";
+    position: absolute;
+    background: var(--blue-900) url("/images/clientsBg.jpg") no-repeat top fixed;
+    background-size: cover;
+    filter: contrast(0.4);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+  }
+
+  .content {
+    flex: 1;
+    h1 {
+      color: var(--gray-800);
+    }
+
+    > div {
+      margin-top: 2rem;
+      width: 100%;
+
+
+      .clients-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        img {
+          width: 8rem;
+
+        }
+      }
+    }
+  }
+}

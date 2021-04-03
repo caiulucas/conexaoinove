@@ -1,0 +1,46 @@
+#clients {
+  position: relative;
+}
+
+#clients::before {
+  content: "";
+  position: absolute;
+  background: var(--blue-900) url("/images/clientsBg.jpg") no-repeat top fixed;
+  background-size: cover;
+  -webkit-filter: contrast(0.4);
+          filter: contrast(0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#clients .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#clients .content h1 {
+  color: var(--gray-800);
+}
+
+#clients .content > div {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+#clients .content > div .clients-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+#clients .content > div .clients-container img {
+  width: 8rem;
+}
+/*# sourceMappingURL=clients.css.map */
